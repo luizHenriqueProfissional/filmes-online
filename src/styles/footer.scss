@@ -1,0 +1,67 @@
+.footer{
+background-color: #201c1c;
+padding: 5vw;
+
+
+
+    section{
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        max-width: 800px;
+        
+
+        &__form{
+            display: block;
+
+            label{
+                color: #ccc;
+            }
+
+            input{
+                margin: 5px 0;
+                width: 100%;
+                }
+
+            .duvidas{
+                width: 100%;
+                label{
+                    display: block;
+                }
+                textarea{
+                    width: 100%;
+                    margin: 5px 0;
+                }
+            }
+
+            button{
+                width: 100%;
+                color: #fff;
+                background-color: green;
+                border: solid 1px #fff; 
+                padding: 10px;
+                &:hover{
+                    background-color: lighten(green,10%);
+                }
+            }
+            }
+            &__links{
+                display: block;
+                
+                a{
+                    text-decoration: none;
+                    color: #ccc;
+                    cursor: pointer;
+                    
+                }
+                img{
+                    margin-top: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }

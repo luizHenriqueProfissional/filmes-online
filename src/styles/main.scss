@@ -1,0 +1,50 @@
+@use'hero';
+@use 'quemsomos';
+@use 'footer'; 
+
+.header{
+    background-color: #000000;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        &--img{
+            height: 50px;
+            background-color: #fff;
+        }
+        &__botoes{
+            display: flex;
+            
+            button{
+                border: solid 1px #fff;
+                height: 40px;
+                color: #fff;
+                border-radius: 10px;
+                margin: 5px;
+                padding: 10px;
+            }
+            &--botao1{
+                font-family: sans-serif;
+                background-color: blue;
+                font-weight: bold;
+
+                &:hover{
+                    background-color: lighten(blue, 15%);
+
+                }
+            }
+            &--botao2{
+                background-color: #000;
+                font-weight: bold;
+
+                &:hover{
+                    background-color: lighten(#ccc, 15%);
+                    color: #000;
+                }
+            }
+        }
+    }
+}
